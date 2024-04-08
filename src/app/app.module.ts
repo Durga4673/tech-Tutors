@@ -10,13 +10,25 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponentComponent } from './register-component/register-component.component';
+import { BlogComponent } from './blog/blog.component';
+import { CoursesComponent } from './courses/courses.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
+import { CourseDetailComponent } from './course-detail/course-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterComponentComponent,
+    BlogComponent,
+    CoursesComponent,
+    AboutUsComponent,
+    BlogCardComponent,
+    CourseDetailComponent
   ],
   imports: [
     BrowserModule,

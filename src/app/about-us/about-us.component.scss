@@ -1,0 +1,147 @@
+.bg-img-2 {
+    background: rgba(0, 0, 0, 0) url(../../assets/images/about-us-banner.webp) repeat scroll 0 0;
+    background-position: center center;
+    background-size: cover;
+}
+.bg-opacity-2:before {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-opacity-2 {
+    position: relative;
+    isolation: isolate;
+}
+
+.ptb-100 {
+    padding: 115px 0;
+}
+.breadcrumb-text {
+    position: relative;
+    z-index: 1;
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb-menu ul li {
+    display: inline-block;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+.breadcrumb-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: .3s;
+}
+.breadcrumb-menu span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.breadcrumb-menu ul li::after {
+    color: #fff;
+    content: "/";
+    display: inline-block;
+    position: relative;
+    right: -6px;
+    top: 2px;
+}
+
+.pt-80 {
+    padding-top: 40px;
+}
+.pb-50 {
+    padding-bottom: 40px;
+}
+.single-features {
+    border: 1px solid #dddddd;
+    padding: 40px 25px;
+    transition: all 0.3s ease 0s;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+.icon-box {
+    margin-bottom: 25px;
+}
+.icon-box i {
+    border: 1px solid #4fc1f0;
+    border-radius: 50%;
+    color: #4fc1f0;
+    display: inline-block;
+    font-size: 30px;
+    height: 80px;
+    line-height: 78px;
+    width: 80px;
+    transition: .3s;
+}
+.single-features h5 {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.single-features p {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    transition: .3s;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
+.section-title {
+    margin-bottom: 60px;
+}
+.section-title h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.85);
+}
+.section-title p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 0;
+}
+.single-media > p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.single-media > ul {
+    list-style: inherit;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+.single-media > p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.single-features:hover {
+    background: #1BB4B9;
+    border-color: #1BB4B9;
+}
+.single-features:hover.single-features h5 {
+    color: #fff;
+}
+.single-features:hover.single-features p {
+    color: #fff;
+}
+.single-features:hover .icon-box i {
+    border-color: #fff;
+    color: #fff;
+}

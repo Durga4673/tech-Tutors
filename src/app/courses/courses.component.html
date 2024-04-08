@@ -1,0 +1,47 @@
+<div class="breadcrumb-banner-area bg-img-2 bg-opacity-2 ptb-100" style="margin-top: 75px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumb-text">
+                    <div class="breadcrumb-menu">
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><span>Courses</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="courses-area  pt-4">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Our Courses style-1 </h3>
+            <p>Our preschool program has six dedicated classes</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4" *ngFor="let card of cards">
+                <div class="single-courses mb-30">
+                    <div class="courses-img">
+                        <a href="#"><img [src]="card.imgSrc" alt="">
+                            <span class="class-dates">{{ card.dates }}</span>
+                        </a>
+                    </div>
+                    <div class="courses-text">
+                        <div class="class-des">
+                            <h3><a href="#">{{ card.title }}</a></h3>
+                            <div class="class-schedule">
+                                <span>Duration: {{ card.duration }}</span>
+                                <span>Sit Available: {{ card.sitAvailable }}</span>
+                            </div>
+                            <p>{{ card.description }}</p>
+                            <span class="arrow"><a (click)="goToCourseDetail(card.title)">Read More</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

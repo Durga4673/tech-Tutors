@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DashboardComponent } from 'src/app/dashboard/dashboard.component';
+import { RegisterComponentComponent } from 'src/app/register-component/register-component.component';
 
 @Component({
   selector: 'app-navbar',
@@ -13,7 +14,7 @@ export class NavbarComponent {
   constructor( private _dialog : MatDialog){}
 
   openEmployeeForm(){
-    const dialogRef = this._dialog.open(DashboardComponent);
+    const dialogRef = this._dialog.open(RegisterComponentComponent);
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if(val){

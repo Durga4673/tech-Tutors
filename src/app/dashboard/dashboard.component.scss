@@ -1,12 +1,202 @@
-// .register-form {
-//   max-width: 350px;
-//   margin: auto;
-// }
 
-
-.Register-heading{
-  text-align: center;
-  color: #000;
-  font-weight: 600;
-
+.banner-bg{
+  background-image: url('../../assets/images/banner-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; 
+  padding: 3rem 0;
+  position: relative;
 }
+.banner-txt h2{
+  font-size: 40px;
+}
+.btm-space{
+  margin-bottom: 1.5rem;
+}
+.banner-txt h2{
+  font-size: 40px;
+}
+.btm-space{
+  margin-bottom: 1.5rem;
+}
+.card-content{
+  margin-top: auto;
+}
+
+.font-bold{
+  font-weight: 500;
+}
+
+
+.banner-txt p{
+  max-width: 425px;
+}
+.banner-txt-para1{
+  color: #e1e1e1;
+  font-size: 21px;
+  margin-top: 1rem;
+}
+.banner-txt-para2{
+  color: #FCC82B;
+}
+.grey-color-p{
+  color: #6c6c6c;
+}
+.grey-color-p2{
+color: #000;
+}
+
+.theme-red{
+  color: #CC3253;
+}
+
+.grey-bg{
+  background-color: #fff;
+  padding: 1rem 0;
+}
+.engage-card{
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 2px 2px 6px 1px #e3e3e3;
+  min-height: 460px;
+}
+
+.footer-bg p, .loadmore{
+  color: #edeaea !important;
+}
+.footer-right-logo{
+  background-color: #fff;
+  padding: 4rem 3.5rem;
+  border-radius: 25px 0 25px 0;
+}
+.footer-content-width{
+  max-width: 585px;
+}
+.banking-btn{
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
+  background: #9e3845;
+  color: #fff !important;
+  cursor: pointer;
+}
+.banking-btn:hover{
+  background-color: #852f3a;
+}
+.icons-size img{
+  max-height: 60px;
+}
+.icons-size .custom-card{
+  min-height: 180px;
+}
+
+.bolrd-word{
+  font-weight: 500;
+  font-style: italic;
+}
+.custom-card{
+  border: 1px solid #e3e3e3;
+  box-shadow: 2px 2px 6px 1px #e3e3e3;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.icons-size .custom-card {
+  min-height: 180px;
+}
+.banking-card{
+  text-align: center;
+  font-weight: 700;
+  box-shadow: 2px 2px 6px 1px #e3e3e3;
+  border: 2px solid #d1e6ff !important;
+  margin-bottom: 1.3rem;
+  padding: 0 0.5rem;
+}
+.banking-card  img{
+  width: 100%;
+  height: auto;
+  // max-height: 80px;
+  // max-width: 120px;
+  margin: 2rem auto;
+}
+.cardtext h6{
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.cust-margin{
+  margin-bottom: 2.23rem !important;
+}
+.optimize-img{
+  margin-top: 1.5rem;
+}
+.offWhite-bg{
+  background: rgba(235, 235, 242, 0.7);
+}
+.cardFeature{
+  padding: 32px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border: 1px solid #ebebf2;
+}
+.cardFeature__icon--bg-g {
+  background: rgba(0, 175, 146, 0.1);
+}
+.cardFeature__icon {
+  width: 72px;
+  height: 72px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.font-title--xs {
+  font-size: 24px;
+  line-height: 36px;
+  color: #42414b;
+  font-weight: 500;
+}
+.cardFeature p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f8fa3;
+  font-weight: 400;
+}
+.cardFeature__icon--bg-b {
+  background: rgba(16, 137, 255, 0.1);
+}
+.cardFeature__icon--bg-r {
+  background: rgba(241, 92, 76, 0.1);
+}
+.cardFeature__icon--bg-g svg {
+  color: #00af91;
+}
+.cardFeature__icon--bg-b svg {
+  color: #1089ff;
+}
+.cardFeature__icon--bg-r svg {
+  color: #f15c4c;
+}
+.cardFeature:hover .cardFeature__icon--bg-r {
+  background: #f15c4c;
+}
+.cardFeature:hover .cardFeature__icon--bg-r svg {
+  color: #fff !important;
+}
+

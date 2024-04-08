@@ -1,0 +1,194 @@
+.bg-img-2 {
+    background: rgba(0, 0, 0, 0) url(../../assets/images/about-us-banner.webp) repeat scroll 0 0;
+    background-position: center center;
+    background-size: cover;
+}
+.bg-opacity-2:before {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-opacity-2 {
+    position: relative;
+    isolation: isolate;
+}
+
+.ptb-100 {
+    padding: 115px 0;
+}
+.breadcrumb-text {
+    position: relative;
+    z-index: 1;
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb-menu ul li {
+    display: inline-block;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+.breadcrumb-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: .3s;
+}
+.breadcrumb-menu span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.breadcrumb-menu ul li::after {
+    color: #fff;
+    content: "/";
+    display: inline-block;
+    position: relative;
+    right: -6px;
+    top: 2px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.section-title {
+    margin-bottom: 60px;
+}
+.section-title h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.85);
+}
+.section-title p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 0;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.courses-img {
+    position: relative;
+}
+.courses-img a {
+    position: relative;
+    display: block;
+}
+.courses-img img {
+    width: 100%;
+}
+.class-dates {
+    background: #1bb4b9 none repeat scroll 0 0;
+    border-radius: 50%;
+    bottom: 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    height: 80px;
+    left: 0;
+    line-height: 24px;
+    margin: auto;
+    opacity: 0;
+    padding-top: 19px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: capitalize;
+    transform: scale(0.2);
+    width: 80px;
+    top: 0;
+    bottom: 0;
+    transition: .3s;
+    z-index: 99;
+}
+.class-dates > span {
+    display: block;
+}
+.courses-text {
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+}
+.class-des > h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.class-des a:hover {
+    color: #F5B120;
+}
+.class-schedule > span {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.class-schedule > span:last-child {
+    margin-right: 0;
+}
+.class-schedule > span {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+
+.class-des a {
+    color: rgba(0, 0, 0, 0.85);
+    transition: .3s;
+    text-decoration: none;
+}
+.class-des > p{
+    margin-bottom: 0;
+    word-spacing: 1px;
+}
+.arrow > a {
+    border: 1px solid #dddddd;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 15px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.arrow > a:hover {
+    border-color: #f5b120;
+}
+.class-des a:hover {
+    color: #F5B120;
+}
+.single-courses:hover .courses-img a::before {
+    opacity: 1;
+}
+.courses-img a::before {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 99;
+    transition: .3s;
+}

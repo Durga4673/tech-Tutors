@@ -1,0 +1,56 @@
+.bg-img-2 {
+    background: rgba(0, 0, 0, 0) url(../../assets/images/blog_bgBanner.jpg) repeat scroll 0 0;
+    background-position: center center;
+    background-size: cover;
+}
+.bg-opacity-2:before {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.bg-opacity-2 {
+    position: relative;
+    isolation: isolate;
+}
+
+.ptb-100 {
+    padding: 75px 0;
+}
+.breadcrumb-text {
+    position: relative;
+    z-index: 1;
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb-menu ul li {
+    display: inline-block;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+.breadcrumb-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: .3s;
+}
+.breadcrumb-menu span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.breadcrumb-menu ul li::after {
+    color: #fff;
+    content: "/";
+    display: inline-block;
+    position: relative;
+    right: -6px;
+    top: 2px;
+}
