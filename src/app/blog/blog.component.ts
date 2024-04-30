@@ -8,61 +8,48 @@ import { Router } from '@angular/router';
 })
 export class BlogComponent {
 
-  cards = [
-    { 
-    title: 'Card title 1', 
-    text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
-    imgSrc: '../../assets/images/1.webp' 
-  },
-
-    { 
-      title: 'Card title 2', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
-    },
-    
-    { 
-      title: 'Card title 3', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
+  blogPosts = [
+    {
+      title: 'Good ways to set mind while Studying',
+      imageUrl: 'assets/images/item5.jpg',
+      date: 'Dec 1, 2024',
+      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
     },
 
-    { 
-      title: 'Card title 4', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
+    {
+      title: 'Education Is For Human Greatness And Achievments',
+      imageUrl: 'assets/images/blog2.jpg',
+      date: 'Dec 3, 2024',
+      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
     },
     
-    { 
-      title: 'Card title 5', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
-    }, 
-    
-    { 
-      title: 'Card title 6', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
+    {
+      title: 'Education Is For Human Greatness And Achievments',
+      imageUrl: 'assets/images/blog3.jpg',
+      date: 'Dec 9, 2024',
+      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
+    },
+    {
+      title: 'Good ways to set mind while Studying',
+      imageUrl: 'assets/images/blog4.jpg',
+      date: 'Dec 1, 2024',
+      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
     },
     
-    { 
-      title: 'Card title 7', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
-    },
-    { 
-      title: 'Card title 8', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
+    {
+      title: 'Education Is For Human Greatness And Achievments',
+      imageUrl: 'assets/images/blog5.jpg',
+      date: 'Dec 1, 2024',
+      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
     },
     
-    { 
-      title: 'Card title 9', 
-      text: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
-      imgSrc: '../../assets/images/1.webp'
+    {
+      title: 'The State Of Learn And Develop Tips In 2020',
+      imageUrl: 'assets/images/blog6.jpg',
+      date: 'Dec 1, 2024',
+      content: 'At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.'
     },
 
-  
   ];
 
   constructor(private router: Router) {}

@@ -16,6 +16,11 @@ import { CoursesComponent } from './courses/courses.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +42,11 @@ import { CourseDetailComponent } from './course-detail/course-detail.component';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    SlickCarouselModule,
+    MatExpansionModule,
+    NgxIntlTelInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

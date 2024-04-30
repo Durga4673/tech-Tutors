@@ -1,56 +1,96 @@
-.bg-img-2 {
-    background: rgba(0, 0, 0, 0) url(../../assets/images/blog_bgBanner.jpg) repeat scroll 0 0;
-    background-position: center center;
-    background-size: cover;
+
+.bg-transparent {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
 }
-.bg-opacity-2:before {
-    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+li {
+    list-style: none;
+}
+.text-secondary {
+    color: #666575 !important;
+    text-decoration: none;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0.5rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #6c757d;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0.5rem;
+}
+
+.zoom-effect {
+    position: relative;
+    overflow: hidden;
+}
+.rounded-3 {
+    border-radius: 0.5rem !important;
+}
+.zoom-effect:before {
     content: "";
+    display: block;
+    width: 100%;
     height: 100%;
+    top: 0;
     left: 0;
     position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s ease;
 }
-.bg-opacity-2 {
-    position: relative;
-    isolation: isolate;
+.text-black-50 {
+    color: rgba(0, 0, 0, .5) !important;
 }
-
-.ptb-100 {
-    padding: 75px 0;
+.blog-paragraph {
+    color: #908F8D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Roboto Slab', serif;
 }
-.breadcrumb-text {
-    position: relative;
-    z-index: 1;
+.blog-read {
+    color: #908F8D;
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
 }
-ul {
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
+a.blog-read {
+    border-bottom: 1px solid #D9D9D8;
+    transition: all 0.3s ease-in;
 }
-.breadcrumb-menu ul li {
-    display: inline-block;
-    padding: 0 5px;
-    text-transform: capitalize;
-}
-.breadcrumb-menu ul li a {
+a {
     text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: .3s;
+    color: #282828;
 }
-.breadcrumb-menu span {
-    font-size: 16px;
-    color: #fff;
-}
+.image-holder {
+    overflow: hidden;
+  }
+  
+  .post-image {
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .image-holder:hover .post-image {
+    transform: scale(1.2);
+  }
+  
 
-.breadcrumb-menu ul li::after {
-    color: #fff;
-    content: "/";
-    display: inline-block;
-    position: relative;
-    right: -6px;
-    top: 2px;
-}
+  .card-hover {
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow properties */
+  }

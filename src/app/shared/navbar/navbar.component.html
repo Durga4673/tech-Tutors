@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light navbar_bg fixed-top" style="padding: 18px;">
+<!-- <nav class="navbar navbar-expand-lg navbar-light navbar_bg fixed-top" style="padding: 18px;">
   <div class="container">
-      <a class="navbar-brand" href="#" style="color: white;">Navbar</a>
+      <a class="navbar-brand" href="#" style="color: white;">TechTutor</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="color: white;"></span>
       </button>
@@ -22,4 +22,40 @@
           </form>
       </div>
   </div>
-</nav>
+</nav> -->
+<header class="nav-shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://wdpf54.tech/elearning/public/frontend/dist/images/logo/logo.png" alt="Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    (click)="toggleNavbar()">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" #navbarCollapse>
+                <ul class="navbar-nav ml-auto mr-auto mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"  aria-current="page" (click)="toggleNavbar()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  routerLink="courses" (click)="toggleNavbar()">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  routerLink="aboutus" (click)="toggleNavbar()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  routerLink="blog" (click)="toggleNavbar()">Blogs</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link"  routerLink="" (click)="toggleNavbar()">Events</a>
+                    </li> -->
+                </ul>
+                <button class="button button--dark registerBtn" routerLink="registerUS" (click)="toggleNavbar()">Register </button>
+            </div>
+        </div>
+    </nav>
+</header>

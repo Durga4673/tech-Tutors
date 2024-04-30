@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DashboardComponent } from 'src/app/dashboard/dashboard.component';
 import { RegisterComponentComponent } from 'src/app/register-component/register-component.component';
@@ -10,19 +10,20 @@ import { RegisterComponentComponent } from 'src/app/register-component/register-
 })
 export class NavbarComponent {
 
+  
+  @ViewChild('navbarCollapse') navbarCollapse !: ElementRef;
 
-  constructor( private _dialog : MatDialog){}
 
-  openEmployeeForm(){
-    const dialogRef = this._dialog.open(RegisterComponentComponent);
-    dialogRef.afterClosed().subscribe({
-      next: (val) => {
-        if(val){
-          // this.getEmployeeList();
-        }
-      }
-     })
+  constructor(private renderer: Renderer2) { }
+
+  toggleNavbar() {
+    const navbar = this.navbarCollapse.nativeElement;
+    if (navbar.classList.contains('show')) {
+      this.renderer.removeClass(navbar, 'show');
+    } else {
+      this.renderer.addClass(navbar, 'show');
     }
+  }
 
 
 }

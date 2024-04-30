@@ -9,7 +9,8 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 
 const routes: Routes = [
-  {path: '', component: DashboardComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: DashboardComponent },
   {path: 'courses', component: CoursesComponent},
   {path: 'aboutus', component: AboutUsComponent},
   {path: 'registerUS', component: RegisterComponentComponent},

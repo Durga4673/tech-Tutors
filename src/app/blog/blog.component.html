@@ -1,32 +1,52 @@
-<div class="breadcrumb-banner-area bg-img-2 bg-opacity-2 ptb-100" style="margin-top: 76px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="breadcrumb-text">
-                    <div class="breadcrumb-menu">
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><span>Blog</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<!-- <div style="margin-top: 78px;">
+    <div class="container-fluid" [ngStyle]="{ 'background-image': 'url(' + getBackgroundImageUrl() + ')' }">
+        <div *ngIf="courseDetails" class="course-details">
+            <h2>{{ courseDetails?.title }}</h2>
+            <p>{{ courseDetails?.description }}</p>
+        </div>
+        <div *ngIf="!courseDetails" class="error-message">
+            Course details not found.
         </div>
     </div>
-</div>
-<div class="container-fluid">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-4 mb-3" *ngFor="let card of cards">
-                <div class="card">
-                    <img [src]="card.imgSrc" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ card.title }}</h5>
-                        <p class="card-text">{{ card.text }}</p>
-                        <a  class="btn btn-primary" (click)="viewCardDetail(card.title)">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-          </div>
+</div> -->
+
+<section class="section event-sub-section">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+            <ol class="breadcrumb align-items-center bg-transparent p-0 mb-0">
+                <li class="breadcrumb-item">
+                    <a href="" class="fs-6 text-secondary">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)"  class="fs-6 text-secondary">Blog</a>
+                </li>
+            </ol>
+        </nav>
     </div>
-</div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="entry-item col-md-4 my-4 card-hover"  *ngFor="let post of blogPosts">
+                <div class="blog-post">
+                  <div class="image-holder zoom-effect rounded-3">
+                    <a href="javascript:void(0)"> 
+                        <img [src]="post.imageUrl" alt="img" class="post-image img-fluid rounded-3 aspect-ratio"> </a>
+                  </div>
+                  <div class="mt-3">
+                    <a href="javascript:void(0)">
+                      <p class="text-black-50 m-1">{{ post.date }}</p>
+                    </a>
+                    <a href="javascript:void(0)">
+                      <h4 class="m-0">{{ post.title }}</h4>
+                    </a>
+                    <div class="mt-2">
+                      <p class="blog-paragraph fs-6">{{ post.content }}</p>
+                      <a href="javascript:void(0)" class="blog-read">read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>

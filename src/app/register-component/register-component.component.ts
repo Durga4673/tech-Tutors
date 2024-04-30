@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, AbstractControl } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { SheetService } from '../services/sheet.service';
+import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
 
 
 @Component({
@@ -9,42 +11,68 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./register-component.component.scss']
 })
 export class RegisterComponentComponent {
-  form: FormGroup = new FormGroup({
-    fullname: new FormControl(''),
-    email: new FormControl(''),
-    mobile: new FormControl(''),
-  });
 
+
+  separateDialCode = false;
+	SearchCountryField = SearchCountryField;
+	CountryISO = CountryISO;
+  PhoneNumberFormat = PhoneNumberFormat;
+	preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
+
+
+  form!: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  City: any = ['Java', 'Data Science', 'AWS', 'Python']
 
-  get f(): { [key: string]: AbstractControl } {
-    return this.form.controls;
-  }
+  private apiUrl = 'https://script.google.com/macros/s/AKfycbwoL7A03UEfLGTLTDoUYwSYLki0JPy3QCvmw7kCOdkEwWf_PM4DW1T_09ufkmcnUHAJ/exec';
+
+
+  constructor(private formBuilder: FormBuilder,
+    private http: HttpClient,
+    private service : SheetService
+  ) {}
 
   ngOnInit(): void {
     this.form = this.formBuilder.group(
       {
         fullname: ['', Validators.required],
         email: ['', [Validators.required, Validators.email]],
-        mobile: ['', [Validators.required,]],
+        mobile: ['', [Validators.required]],
+        timeZone: ['', Validators.required],
+        courseName: ['', [Validators.required]],
+        acceptTerms: [false, Validators.requiredTrue],
       },
     );
   }
 
-  onSubmit(){
+  
+  
+  get f(): { [key: string]: AbstractControl } {
+    return this.form.controls;
+  }
+
+  onSubmit(formData: any): void {
     this.submitted = true;
+  
     if (this.form.invalid) {
       return;
     }
-    console.log(JSON.stringify(this.form.value, null, 2));
+    const fullname = this.form.value.fullname;
+    const email = this.form.value.email;
+    const mobile = this.form.value.mobile;
+    const timeZone = this.form.value.timeZone;
+    const courseName = this.form.value.courseName;
+  
+    this.service.createSheet(fullname, email, mobile, timeZone, courseName).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.form.reset();
+        this.submitted = false;
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    });
   }
-
-  onReset(): void {
-    this.submitted = false;
-    this.form.reset();
-  }
-
-
 }
