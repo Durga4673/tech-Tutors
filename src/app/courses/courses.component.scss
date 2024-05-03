@@ -5,10 +5,6 @@
     background-color: transparent !important;
 }
 
-.text-secondary {
-    color: #666575 !important;
-    text-decoration: none;
-}
 .fs-6 {
     font-size: 1rem !important;
 }
@@ -52,14 +48,13 @@
 }
 .button-lg {
     padding: 19px 32px;
-}
-.button-md, .button-lg {
     border: 0px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
+
 button {
     display: inline-block;
     padding: 12px 19px;
@@ -70,7 +65,6 @@ button {
     color: #fff;
     text-align: center;
     text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     transition: all 0.2s linear;
     text-decoration: none;

@@ -11,15 +11,14 @@ export class SheetService {
 
   constructor(private http: HttpClient) { }
 
-  createSheet(
-    fullname: string,
-    email: string,
-    mobile: string,
-    timeZone: string,
-    courseName: string,
-  ): Observable<Sheet> {
-    return this.http.post<Sheet>(`${environment.CONNECTION_URL}`, {
-      fullname, email, mobile, timeZone, courseName
-    });
+  createSheet(fullname: string, email: string, mobile: string, timeZone: string, courseName: string): Observable<Sheet> {
+    const sheetData = {
+      fullname,
+      email,
+      mobile,
+      timeZone,
+      courseName
+    };
+    return this.http.post<Sheet>(`${environment.CONNECTIONURL}`, sheetData);
   }
 }

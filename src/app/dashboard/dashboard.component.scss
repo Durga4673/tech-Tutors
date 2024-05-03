@@ -103,6 +103,10 @@
 }
 
 @media (max-width: 991px) {
+  .learning-rules {
+    overflow: hidden;
+  }
+
   .main-banner {
     padding-top: 90px !important;
   }
@@ -116,8 +120,52 @@
     text-align: left;
   }
 
-  .main-banner {
-    padding-top: 90px !important;
+  .learning-rules-ends>img {
+    height: 450px;
+  }
+  .learning-rules-ends {
+    padding-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .learning-rules-ends {
+    display: flex !important;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .feature .cardFeature {
+    margin-bottom: 16px;
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    left: auto;
+    right: 150px;
+  }
+
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: auto;
+    bottom: 0px;
+    left: 115px;
+    transform: rotate(90deg);
+  }
+  
+  .learning-rules-starts .h2 {
+    text-align: left;
+  }
+  .learning-rules-item .item-text {
+    text-align: left;
+  }
+  .learning-rules-shape .shape-02 {
+    bottom: -85px;
+    left: auto;
+    right: -45px;
+  }
+
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: auto !important;
+    bottom: 0px;
+    left: 115px;
+    transform: rotate(90deg);
   }
 }
 
@@ -125,7 +173,9 @@
   .main-banner-end {
     margin-right: 0 !important;
   }
-
+  .browse-categories-shape {
+    display: none;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 574px) {
@@ -143,16 +193,13 @@
   .banner-two-start p {
     margin-right: 0px;
   }
-
-
-}
-
-@media (max-width: 480px) {
-  .font-title--lg {
-    font-size: 32px !important;
-    line-height: 42px !important;
+  .learning-rules-ends>img {
+    height: auto;
   }
+
 }
+
+
 
 @media (max-width: 767px) {
   .font-title--lg {
@@ -164,6 +211,20 @@
     font-size: 14px !important;
     line-height: 24px !important;
   }
+  .section {
+    padding: 50px 0px;
+  }
+  .learning-rules-ends>img {
+    height: 350px;
+  }
+  .section .font-title--md {
+    margin-bottom: 25px;
+  }
+
+  .font-title--md {
+    font-size: 26px;
+    line-height: 36px;
+  }
 }
 
 .main-banner {
@@ -173,8 +234,7 @@
   background-position: center;
 }
 
-.banner-two-start h1,
-.banner-two-start .h1 {
+.banner-two-start h1, .banner-two-start .h1 {
   margin-bottom: 20px;
 }
 
@@ -185,10 +245,7 @@
   line-height: 70px;
 }
 
-.font-title--lg,
-.font-title--md,
-.font-title--sm,
-.font-title--xs {
+.font-title--lg, .font-title--md, .font-title--sm, .font-title--xs {
   text-transform: capitalize;
 }
 
@@ -264,16 +321,11 @@
   padding-bottom: 0px;
 }
 
-.contentCard-bottom h5,
-.contentCard-bottom .h5 {
+.contentCard-bottom h5, .contentCard-bottom .h5 {
   margin-bottom: 16px;
 }
 
-a,
-a:focus,
-a:hover,
-.portfolio-cat a:hover,
-.footer -menu li a:hover {
+a, a:focus, a:hover, .portfolio-cat a:hover, .footer -menu li a:hover {
   text-decoration: none;
 }
 
@@ -365,10 +417,6 @@ a:hover,
   background-color: #1089ff;
 }
 
-.button-lg {
-  padding: 19px 32px;
-}
-
 .button {
   display: inline-block;
   padding: 12px 19px;
@@ -412,17 +460,16 @@ a:hover,
   .learning-rules {
     overflow: hidden;
   }
-}
-
-@media (max-width: 991px) {
-  .learning-rules {
-    overflow: hidden;
+  .learning-rules-shape .shape-01 {
+    top: 0px;
+    left: 0px;
   }
-}
-
-@media (max-width: 767px) {
-  .section {
-    padding: 50px 0px;
+  .learning-rules-item {
+    margin-bottom: 30px;
+  }
+  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
+    top: 220px;
+    right: 65%;
   }
 }
 
@@ -476,13 +523,8 @@ a:hover,
 
 @media (min-width: 1201px) and (max-width: 1499px) {
 
-  .main-become-instructor-shape,
-  .main-events-featured-shape,
-  .main-instructor-featured-shape,
-  .about-services-shape,
-  .learning-rules-shape,
-  .featured-popular-courses-shape,
-  .browse-categories-shape {
+  .main-become-instructor-shape,  .main-events-featured-shape,   .main-instructor-featured-shape,   .about-services-shape,
+  .learning-rules-shape,   .featured-popular-courses-shape,   .browse-categories-shape {
     display: none;
   }
 }
@@ -491,99 +533,6 @@ a:hover,
   position: absolute;
   z-index: -1;
 }
-
-@media (min-width: 320px) and (max-width: 574px) {
-  .learning-rules-ends>img {
-    height: auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .learning-rules-ends>img {
-    height: 450px;
-  }
-
-  .learning-rules-ends {
-    padding-left: 0px !important;
-    margin-right: 0px !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .learning-rules-ends>img {
-    height: 350px;
-  }
-}
-
-@media (max-width: 991px) {
-
-  .learning-rules-ends {
-    display: flex !important;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  .feature .cardFeature {
-    margin-bottom: 16px;
-  }
-
-
-}
-
-@media (min-width: 320px) and (max-width: 574px) {
-  .learning-rules-ends>img {
-    height: auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    left: auto;
-    right: 150px;
-  }
-
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    top: auto;
-    bottom: 0px;
-    left: 115px;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-}
-
-@media (max-width: 1200px) {
-  .learning-rules-shape .shape-01 {
-    top: 0px;
-    left: 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  .section .font-title--md {
-    margin-bottom: 25px;
-  }
-
-  .font-title--md {
-    font-size: 26px;
-    line-height: 36px;
-  }
-}
-
-@media (max-width: 991px) {
-
-  .learning-rules-starts h2,
-  .learning-rules-starts .h2,
-  .learning-rules-starts .h2 {
-    text-align: left;
-  }
-}
-
-@media (max-width: 1200px) {
-  .learning-rules-item {
-    margin-bottom: 30px;
-  }
-}
-
 
 @media (max-width: 480px) {
 
@@ -597,6 +546,11 @@ a:hover,
     font-size: 16px !important;
     line-height: normal !important;
   }
+
+  .font-title--lg {
+    font-size: 32px !important;
+    line-height: 42px !important;
+  }
 }
 
 .learning-rules-item .item-number span {
@@ -607,8 +561,6 @@ a:hover,
 }
 
 .learning-rules-item .item-number {
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 72px;
   height: 72px;
@@ -623,15 +575,12 @@ a:hover,
 
 .learning-rules-item {
   display: flex;
-  -webkit-flex-basis: 65px;
   flex-basis: 65px;
-  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.learning-rules-item .item-text h6,
-.learning-rules-item .item-text .h6 {
+.learning-rules-item .item-text h6, .learning-rules-item .item-text .h6 {
   color: #202029;
   font-size: 18px;
   line-height: 24px;
@@ -639,52 +588,11 @@ a:hover,
   margin-bottom: 6px;
 }
 
-@media (max-width: 991px) {
-  .learning-rules-item .item-text {
-    text-align: left;
-  }
-}
-
 .learning-rules-item .item-text p {
   font-size: 14px;
   line-height: 21px;
   color: #8f8fa3;
   max-width: 376px;
-}
-
-@media (max-width: 991px) {
-  .learning-rules-shape .shape-02 {
-    bottom: -85px;
-    left: auto;
-    right: -45px;
-  }
-
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    left: auto;
-    right: 150px;
-  }
-}
-
-@media (max-width: 991px) {
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    top: auto !important;
-    bottom: 0px;
-    left: 115px;
-    transform: rotate(90deg);
-  }
-
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    left: auto !important;
-    right: 150px !important;
-  }
-
-}
-
-@media (max-width: 1200px) {
-  .learning-rules-ends .earning-rules-ends-shape .shape-1 {
-    top: 220px;
-    right: 65%;
-  }
 }
 
 .learning-rules-ends .earning-rules-ends-shape img {
@@ -699,9 +607,7 @@ a:hover,
 .browse-categories-item {
   margin-top: 20px;
   padding: 30px 0px;
-  // margin: 30px 0px;
 }
-
 
 .category-info {
   position: absolute;
@@ -729,12 +635,10 @@ a:hover,
 
 .card:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  /* Customize shadow properties here */
 }
 
 .card-hover:hover {
   transform: scale(1.05);
-  /* Zoom by 5% on hover */
 }
 
 .card-img-top {
@@ -765,12 +669,6 @@ a:hover,
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .browse-categories-shape {
-    display: none;
-  }
-}
-
 @media (min-width: 992px) and (max-width: 1200px) {
   .browse-categories-shape {
     display: none;
@@ -781,14 +679,4 @@ a:hover,
   .browse-categories-shape {
     display: none;
   }
-}
-
-.slick-prev:before, .slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
-  line-height: 1;
-  color: black !important;
-  opacity: 0.75;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
