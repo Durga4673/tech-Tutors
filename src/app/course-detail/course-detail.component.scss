@@ -1,11 +1,16 @@
+.fill-black {
+    color: black;
+}
 
 .text-secondary {
     color: #666575 !important;
     text-decoration: none;
 }
+
 .fs-6 {
     font-size: 1rem !important;
 }
+
 .breadcrumb-item+.breadcrumb-item {
     padding-left: 0.5rem;
 }
@@ -14,8 +19,9 @@
     float: left;
     padding-right: 0.5rem;
     color: #6c757d;
-    content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+    content: var(--bs-breadcrumb-divider, "/");
 }
+
 .breadcrumb-item+.breadcrumb-item {
     padding-left: 0.5rem;
 }
@@ -23,103 +29,69 @@
 .event-sub-section-main {
     margin-top: 20px;
 }
-.font-title--sm {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 600;
-}
-.font-title--lg, .font-title--md, .font-title--sm, .font-title--xs {
+
+.font-title--lg,
+.font-title--md,
+.font-title--sm,
+.font-title--xs {
     text-transform: capitalize;
 }
-.created-by {
-    margin-top: 20px;
-}
-.created-by-image {
-    height: 75px;
-    width: 75px;
-}
-.created-by-image img {
-    max-width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-.rounded-circle {
-    border-radius: 50% !important;
-}
-.created-by-text p {
-    color: #666575 !important;
-    font-size: 14px !important;
-    margin: 0;
-}
-.created-by-text h6 a, .created-by-text .h6 a {
-    color: #42414b !important;
-    display: block;
-    text-decoration: none;
-}
+
 .event-sub-section-main .icon-with-date {
     margin-top: 12px;
 }
-@media (min-width: 992px){
+
+@media (min-width: 992px) {
     .align-items-lg-center {
-        -webkit-box-align: center !important;
-        -webkit-align-items: center !important;
-        -ms-flex-align: center !important;
         align-items: center !important;
     }
 }
+
 .event-sub-section-main .icon-with-date-start {
     margin-right: 45px;
 }
-.event-sub-section-main .icon-with-date-start p, .event-sub-section-main .icon-with-date-end p {
+
+.event-sub-section-main .icon-with-date-start p,
+.event-sub-section-main .icon-with-date-end p {
     margin-left: 5px;
     color: #42414b;
 }
-.font-para--md {
-    font-size: 14px;
-    line-height: 21px;
-    color: #8585a3;
-}
-.cart__price .current-discount p {
-    font-size: 14px;
-    line-height: 21px;
-    color: #ff7a1a;
-    text-transform: capitalize;
-}
-.cart__checkout-process {
-    margin: 24px 0px;
-    margin-top: 16px;
-}
+
+
 .button--primary {
     background-color: #1089ff;
 }
+
 .button-lg {
     padding: 19px 32px;
 }
-.cart__checkout-process .time-left {
-    font-size: 12px;
-    line-height: 15px;
-    color: #8f8fa3;
-    margin-bottom: 8px;
-}
-.event-sub-section-main .icon-with-date-start p span, .event-sub-section-main .icon-with-date-end p span {
+
+.event-sub-section-main .icon-with-date-start p span,
+.event-sub-section-main .icon-with-date-end p span {
     color: #8f8fa3;
 }
-.event-sub-section-main .icon-with-date-start span, .event-sub-section-main .icon-with-date-end span {
+
+.event-sub-section-main .icon-with-date-start span,
+.event-sub-section-main .icon-with-date-end span {
     margin-left: 5px;
     font-size: 14px;
     line-height: 21px;
     color: #424242;
 }
+
 p {
     margin-bottom: 0px;
 }
+
 .event-info {
     padding-bottom: 100px;
     padding-top: 0px;
 }
-.event-info{
+
+.event-info {
     background-color: #ebebf2;
 }
+
 .course-overview-image {
     height: 450px;
     overflow: hidden;
@@ -127,19 +99,17 @@ p {
     border-radius: 8px;
     margin-bottom: 50px;
 }
+
 .course-overview-image img {
     width: 100%;
     height: inherit;
-    // -o-object-fit: cover;
-    // object-fit: cover;
 }
+
 .course-overview-image .play-button {
     position: absolute;
     top: 55%;
     left: 50%;
-    -webkit-transform: translate(-45%, -50%);
     transform: translate(-45%, -50%);
-    -webkit-box-shadow: 0px 25px 80px 0px #0a09561f;
     box-shadow: 0px 25px 80px 0px #0a09561f;
 }
 
@@ -147,6 +117,7 @@ p {
     width: 390px;
     border-bottom: 1px solid white;
 }
+
 .course-overview-nav .nav-item .nav-link {
     color: #666575;
     border: none;
@@ -155,33 +126,39 @@ p {
     margin-right: 45px;
     background-color: transparent;
 }
+
 .course-overview-nav .nav-item .active {
     color: #202029 !important;
     position: relative;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: #fff;
     background-color: #1089ff;
 }
+
 .nav-pills .nav-link {
     background: none;
     border: 0;
     border-radius: 0.25rem;
 }
+
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
     color: #1089ff;
     text-decoration: none;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
 .font-para--lg {
     font-size: 16px;
     line-height: 24px;
     color: #8f8fa3;
     font-weight: 500;
 }
+
 .course-overview-nav .nav-item .active::after {
     content: '';
     left: 0;
@@ -191,40 +168,51 @@ p {
     position: absolute;
     background-color: #0264ed;
 }
+
 .course-overview-nav .nav-item .active {
     color: #202029 !important;
     position: relative;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: #fff;
     background-color: #1089ff;
 }
+
 .tab-content>.active {
     display: block;
 }
+
 .course-overview-main-item {
     margin-bottom: 15px;
 }
-.course-overview-main-item h6, .course-overview-main-item .h6 {
+
+.course-overview-main-item h6,
+.course-overview-main-item .h6 {
     color: #42414b;
     // margin-bottom: 16px;
     font-weight: 600;
 }
+
 .font-title--card {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
     color: #202029;
 }
+
 .course-overview-main-item p {
     font-weight: 400;
     color: #8f8fa3;
 }
-@media (min-width: 992px){
+
+@media (min-width: 992px) {
     .mt-lg-0 {
         margin-top: 0 !important;
     }
 }
+
 .cart {
     overflow: hidden;
     position: relative;
@@ -232,53 +220,26 @@ p {
     border-radius: 8px;
     padding: 30px;
 }
-.cart__price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.cart__price .current-price{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.cart__price .current-price h3, .cart__price .current-price .h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin-right: 6px;
-    color: #202029;
-}
-.cart__price .current-price p {
-    font-size: 18px;
-    line-height: 27px;
-    color: #8f8fa3;
-}
-.font-title--sm {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 600;
-}
-.cart__share-content {
-    padding-top: 24px;
-}
-.cart__share-content h6, .cart__share-content .h6 {
-    margin-bottom: 14px;
-}
+
 .social-icons {
     display: flex;
     align-items: center;
 }
+
 ul {
     margin: 0px;
     padding: 0px;
 }
+
 .social-icons--outline li {
     border: 1px solid #ebebf2;
 }
+
 .social-icons li {
     border-radius: 4px;
     margin-right: 12px;
 }
+
 .social-icons li a {
     width: 36px;
     height: 36px;
@@ -287,130 +248,103 @@ ul {
     justify-content: center;
     transition: all 0.2s linear;
 }
+
 .social-icons li a svg {
     color: #202029;
 }
-@media (min-width: 992px) and (max-width: 1200px){
+
+@media (min-width: 992px) and (max-width: 1200px) {
     .course-overview-nav {
         width: 100%;
     }
 }
 
-@media (min-width: 420px) and (max-width: 574px){
+@media (min-width: 420px) and (max-width: 574px) {
     .course-overview-nav {
         width: 100% !important;
     }
+
     .course-overview-nav {
         width: 100%;
     }
 }
-@media (max-width: 574px){
+
+@media (max-width: 574px) {
     .course-overview-nav .nav-item .nav-link {
         margin-right: 0px;
     }
 
     .course-overview-nav {
-        justify-content: space-between; 
+        justify-content: space-between;
     }
+
     .course-overview-nav {
         width: 100%;
     }
 }
+
 .section--bg-offwhite-five {
-    background: rgba(255, 255, 255, 0.3)  !important;
+    background: rgba(255, 255, 255, 0.3) !important;
 }
+
 .new-course-feature {
     position: relative;
     z-index: 1;
 }
+
 .section .font-title--md {
     margin-bottom: 50px;
 }
+
 .font-title--md {
     font-size: 40px;
     line-height: 50px;
     font-weight: 700;
-     color: #202029; 
+    color: #202029;
 }
-.contentCard-info .price span {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 500;
-    color: #42414b;
-    font-family: 'Poppins', sans-serif;
-}
-.contentCard-user img {
-    margin-right: 8px !important;
-}
+
+
 a {
     text-decoration: none;
 }
 
-.contentCard-info .price span {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 500;
-    color: #42414b;
-    font-family: 'Poppins', sans-serif;
-}
 
 .new-course-overlay img.shape01 {
     top: -35px;
     right: 0px;
 }
-   
+
 .new-course-overlay img {
     position: absolute;
     top: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
+    user-select: none;
     pointer-events: none;
     z-index: -1;
 }
+
 .new-course-overlay img.shape02 {
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 0;
 }
 
-.button-md, .button-lg {
+.button-md,
+.button-lg {
     border: 0px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
+
 .button--primary-outline {
     border: 2px solid #1089ff;
     background-color: transparent;
     color: #1089ff;
 }
 
-.cart__includes-info{
-    padding: 24px 0px;
-    position: relative;
-}
 
-.cart__includes-info::before {
-    bottom: 0;
-}
-// .cart__includes-info::after, .cart__includes-info::before {
-//     content: '';
-//     position: absolute;
-//     left: -65px;
-//     width: calc(100% + 70%);
-//     background-color: #ebebf2;
-//     height: 1px; 
-// }
-.cart__includes-info ul{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.cart__includes-info ul li{
+.cart__includes-info ul li {
     display: flex;
     align-items: center;
 }
@@ -420,31 +354,31 @@ a {
 }
 
 .expansion-list {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .dot-list-item {
-    display: flex; 
-    align-items: center; 
+}
+
+.dot-list-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
-  
+
     &:before {
-      content: "•"; 
-      margin-right: 10px; 
-      font-size: 14px; 
-      color: #000; 
+        content: "•";
+        margin-right: 10px;
+        font-size: 14px;
+        color: #000;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .dot-list-item {
-      font-size: 12px; 
+        font-size: 12px;
     }
-  }
-  
-  .course-instructor {
+}
+
+.course-instructor {
     background-color: #fff;
     border-radius: 8px;
     max-width: 670px;
@@ -456,18 +390,21 @@ a {
     align-items: center;
 }
 
-.course-instructor-info .instructor-text h6 a, .course-instructor-info .instructor-text .h6 a {
+.course-instructor-info .instructor-text h6 a,
+.course-instructor-info .instructor-text .h6 a {
     text-decoration: none;
     color: #202029;
     display: block;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+
 .course-instructor-info .instructor-image {
     margin-right: 20px;
     width: 125px;
     height: 125px;
 }
+
 .course-instructor-info .instructor-image img {
     border-radius: 50%;
     object-fit: cover;
@@ -477,16 +414,19 @@ a {
 .instructor-info .instructor-text .h6 {
     color: #202029;
 }
+
 .course-instructor-info .instructor-text .ratings-icon {
     margin-top: 10px;
     margin-right: 20px;
 }
-.course-instructor-info .instructor-text .ratings-icon p{
+
+.course-instructor-info .instructor-text .ratings-icon p {
     font-size: 14px;
     line-height: 21px;
     color: #42414b;
     margin-left: 5px;
 }
+
 .course-instructor .lead-p {
     color: #666575;
     margin-top: 15px;
@@ -496,21 +436,4 @@ a {
     color: #42414b;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-}
-@media only screen and (max-width: 600px) {
-
-    .contentCard-more div{
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .contentCard-more div{
-        margin-right: 8px;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .contentCard-more div{
-        margin-right: 12px;
-    }
 }

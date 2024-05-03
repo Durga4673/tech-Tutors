@@ -1,49 +1,4 @@
-<!-- <div class="breadcrumb-banner-area bg-img-2 bg-opacity-2 ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="breadcrumb-text">
-                    <div class="breadcrumb-menu">
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><span>Courses</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="courses-area  pt-4">
-    <div class="container">
-        <div class="section-title text-center">
-            <h3>Our Courses</h3>
-            <p>Our preschool program has six dedicated classes</p>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3" *ngFor="let card of cards">
-                <div class="single-courses mb-30">
-                    <div class="courses-img">
-                        <a href="#"><img [src]="card.imgSrc" alt="">
-                            <span class="class-dates">{{ card.dates }}</span>
-                        </a>
-                    </div>
-                    <div class="courses-text">
-                        <div class="class-des">
-                            <h3><a href="#">{{ card.title }}</a></h3>
-                            <div class="class-schedule">
-                                <span>Duration: {{ card.duration }}</span>
-                                <span>Sit Available: {{ card.sitAvailable }}</span>
-                            </div>
-                            <p>{{ card.description }}</p>
-                            <span class="arrow"><a (click)="goToCourseDetail(card.title)">Read More</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
+
 <!-- Breadcrumb Starts Here -->
 <div class="event-sub-section event-sub-section--spaceY eventsearch-sub-section">
     <div class="container">
@@ -590,46 +545,9 @@
                                 </a>
                             </div>
                             <div class="contentCard-bottom">
-                                <h5>
+                                <h5 class="text-center">
                                     <a (click)="goToCourseDetail(card.title)" class="font-title--card">{{ card.title }}</a>
                                 </h5>
-                                <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                    <a href="" class="contentCard-user d-flex align-items-center">
-                                        <img src="https://wdpf54.tech/elearning/public/uploads/users/Instructor_Burhan Uddin Fuad_137.jpg"
-                                            alt="Instructor Image" class="rounded-circle" height="34" width="34">
-                                        <p class="font-para--md">Burhan Uddin Fuad</p>
-                                    </a>
-                                    <div class="price">
-                                        <span>5000.00</span>
-                                        <del>9000.00</del>
-                                    </div>
-                                </div>
-                                <div class="contentCard-more">
-                                    <div class="d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="assets/images/star.png" alt="star">
-                                        </div>
-                                        <span>4.5</span>
-                                    </div>
-                                    <div class="eye d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="assets/images/eye.png" alt="eye">
-                                        </div>
-                                        <span>24,517</span>
-                                    </div>
-                                    <div class="book d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="assets/images/book.png" alt="location">
-                                        </div>
-                                        <span>35 Lesson</span>
-                                    </div>
-                                    <div class="clock d-flex align-items-center">
-                                        <div class="icon">
-                                            <img src="assets/images/Clock.png" alt="clock">
-                                        </div>
-                                        <span>3 Hours</span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

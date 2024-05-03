@@ -1,8 +1,4 @@
-// .bg-img-2 {
-//     background: rgba(0, 0, 0, 0) url(../../assets/images/about-us-banner.webp) repeat scroll 0 0;
-//     background-position: center center;
-//     background-size: cover;
-// }
+
 .bg-opacity-2:before {
     background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
     content: "";
@@ -336,11 +332,7 @@ li {
     --bs-text-opacity: 1;
     color: rgba( 255, 255, 255, 1) !important;
 }
-.font-title--sm {
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 600;
-}
+
 .about-feature.dark-feature p {
     color: #8f8fa3 !important;
 }
