@@ -3,6 +3,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { SheetService } from '../services/sheet.service';
 import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class RegisterComponentComponent {
 	CountryISO = CountryISO;
   PhoneNumberFormat = PhoneNumberFormat;
 	preferredCountries: CountryISO[] = [CountryISO.UnitedStates, CountryISO.UnitedKingdom];
+  loading: boolean = false;
 
 
   form!: FormGroup;
@@ -30,7 +32,8 @@ export class RegisterComponentComponent {
 
   constructor(private formBuilder: FormBuilder,
     private http: HttpClient,
-    private service : SheetService
+    private service : SheetService,
+    private snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -53,8 +56,7 @@ export class RegisterComponentComponent {
   }
 
   onSubmit(formData: any): void {
-    this.submitted = true;
-  
+    this.submitted = true;  
     if (this.form.invalid) {
       return;
     }
@@ -63,15 +65,24 @@ export class RegisterComponentComponent {
     const mobile = this.form.value.mobile;
     const timeZone = this.form.value.timeZone;
     const courseName = this.form.value.courseName;
+
+    this.loading = true; 
   
     this.service.createSheet(fullname, email, mobile, timeZone, courseName).subscribe({
       next: (res) => {
-        console.log(res);
         this.form.reset();
         this.submitted = false;
-      },
+        this.loading = false;  
+        this.snackBar.open('Form submitted successfully!', 'Close', {
+          duration: 3000, 
+        });   
+     },
       error: (error) => {
         console.log(error);
+        this.loading = false;
+        this.snackBar.open('An error occurred while submitting the form. Please try again.', 'Close', {
+          duration: 3000, 
+        });
       }
     });
   }

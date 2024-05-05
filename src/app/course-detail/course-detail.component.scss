@@ -55,7 +55,6 @@
 }
 
 .course-overview-image {
-    height: 450px;
     overflow: hidden;
     padding-top: 35px;
     border-radius: 8px;
@@ -64,8 +63,22 @@
 
 .course-overview-image img {
     width: 100%;
-    height: inherit;
 }
+
+@media (min-width: 768px) {
+    .course-overview-image img {
+        width: 100%;
+        height: inherit;
+    }
+
+    .course-overview-image {
+        height: 450px;
+        overflow: hidden;
+        padding-top: 35px;
+        border-radius: 8px;
+        margin-bottom: 50px;
+    }
+  }
 
 .course-overview-nav {
     width: 390px;
@@ -371,4 +384,7 @@ a {
     color: #42414b;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+p{
+    margin-bottom: 0px;
 }

@@ -200,7 +200,7 @@ input, button, select, optgroup, textarea {
 }
 
 
-@media (min-width: 420px) and (max-width: 574px){
+@media (min-width: 320px) and (max-width: 574px){
     .signup-area {
         background: #fff;
     }
@@ -220,3 +220,7 @@ input, button, select, optgroup, textarea {
     display: block !important;
     position: relative;
 }
+
+  .mat-simple-snackbar {
+    justify-content: center !important;
+  }

@@ -5,8 +5,14 @@
 }
 .footer__wrapper {
   margin-bottom: 30px;
-  max-width: 65%;
 }
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    max-width: 65%;
+  }
+}
+
 .footer__wrapper_logo {
   margin-bottom: 6px;
   
@@ -14,8 +20,6 @@
 .footer__wrapper_logo img{
  background-color: #fff; 
 }
-
-
 
 .footer__wrapper p {
   font-size: 16px;
